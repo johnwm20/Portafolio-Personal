@@ -15,7 +15,7 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.pj1.ui.gallery.GalleryFragment"
         android:label="Portafolio Personal - Fotos"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -26,7 +26,7 @@
         android:id="@+id/perfilFragment2"
         android:name="com.example.pj1.ui.perfil.PerfilFragment"
         android:label="Portafolio Personal - Perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfi" />
     <fragment
         android:id="@+id/nav_web2"
         android:name="com.example.pj1.ui.web.webFragment"
