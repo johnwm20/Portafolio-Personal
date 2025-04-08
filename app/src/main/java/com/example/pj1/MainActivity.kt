@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.pj1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-   private VideoView videoView
+   //private videoView: VideoView
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
