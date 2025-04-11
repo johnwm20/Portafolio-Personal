@@ -6,6 +6,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="foto_perfil">Foto de perfil</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -17,5 +18,23 @@
     <string name="web">Web</string>
     <string name="botones">Botones</string>
     <string name="info">Info</string>
+    <string name="experiencia_laboral">Experiencia Laboral</string>
+    <string name="mario_alfonso">Mario Alfonso</string>
+    <string name="documento">Documento:</string>
+    <string name="profesi_n">Profesión:</string>
+    <string name="_1111339543">1111339543</string>
+    <string name="calle_1_3_32">Calle 1 # 3-32</string>
+    <string name="nombres">Nombres:</string>
+    <string name="gonz_lez_guarin">González Guarin</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="conocimientos">Conocimientos</string>
+    <string name="conocimientos_de_programaci_n_en_java_c_python_php_bases_de_datos_algoritmos_y_estructuras_de_datos_principios_de_ingenier_a_pruebas_y_depuraci_n_de_software_seguridad_inform_tica">Conocimientos de programación en Java, C++, Python, PHP, bases de datos, algoritmos y estructuras de datos, principios de ingeniería, pruebas y depuración de software, seguridad informática.</string>
+    <string name="ver_curr_culum">Ver Currículum</string>
+    <string name="ver_portafolio">Ver Portafolio</string>
+    <string name="ingeniero_en_sistemas_jr_todo_clic_01_2016_06_2017">Ingeniero en Sistemas Jr, Todo Clic, 01/2016 - 06/2017</string>
+    <string name="ingeniero_en_sistemas_devoteam_desde_junio_2017">Ingeniero en Sistemas, DevoTeam, desde junio 2017</string>
+    <string name="direcci_n">Dirección:</string>
+    <string name="ingeniero_de_software">Ingeniero de Software</string>
+    <string name="todo">TODO</string>
 
 </resources>
