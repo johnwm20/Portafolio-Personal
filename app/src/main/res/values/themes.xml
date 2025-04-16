@@ -14,12 +14,19 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- NoActionBar Theme -->
     <style name="Theme.PJ1.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
+    <!-- Overlays -->
     <style name="Theme.PJ1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.PJ1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 🔵 Estilo para imagen circular -->
+    <style name="ShapeAppearanceOverlay.MaterialComponents.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

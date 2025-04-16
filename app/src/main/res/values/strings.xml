@@ -18,4 +18,9 @@
     <string name="botones">Botones</string>
     <string name="info">Info</string>
 
+    <string name="bienvenida">¡Bienvenido a mi portafolio!</string>
+    <string name="subtitulo_inicio">Explora mis habilidades, proyectos y experiencia.</string>
+    <string name="descripcion_imagen_inicio">Imagen de presentación</string>
+
+
 </resources>
