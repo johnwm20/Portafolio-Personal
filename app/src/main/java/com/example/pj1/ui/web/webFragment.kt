@@ -3,7 +3,6 @@ package com.example.pj1.ui.web
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
-import android.os.Build
 import android.os.Bundle
 import android.util.Patterns
 import android.view.LayoutInflater
@@ -23,7 +22,6 @@ import java.nio.charset.StandardCharsets
 class webFragment : Fragment() {
 
     private val viewModel: WebViewModel by viewModels()
-
     private var _binding: FragmentNavWebBinding? = null
     private val binding get() = _binding!!
 
@@ -47,12 +45,10 @@ class webFragment : Fragment() {
         binding.webView.apply {
             settings.javaScriptEnabled = true
             settings.domStorageEnabled = true
-            // settings.databaseEnabled = true // ← Obsoleto, eliminado
 
             webViewClient = object : WebViewClient() {
                 override fun shouldOverrideUrlLoading(
-                    view: WebView?,
-                    request: WebResourceRequest?
+                    view: WebView?, request: WebResourceRequest?
                 ): Boolean {
                     val url = request?.url?.toString()
                     if (url != null) {
@@ -73,7 +69,6 @@ class webFragment : Fragment() {
                     binding.progressBar.visibility = View.GONE
                 }
 
-                // ✅ Nuevo método (API 23+)
                 override fun onReceivedError(
                     view: WebView,
                     request: WebResourceRequest,
@@ -85,7 +80,6 @@ class webFragment : Fragment() {
                     }
                 }
 
-                // ✅ Antiguo método para compatibilidad
                 @Suppress("DEPRECATION")
                 override fun onReceivedError(
                     view: WebView?,
@@ -127,8 +121,11 @@ class webFragment : Fragment() {
     private fun handleUrlInput() {
         val input = binding.urlEditText.text.toString().trim()
         if (input.isNotEmpty()) {
-            loadUrlOrSearch(input)
             hideKeyboard()
+            // Evita bloqueo del hilo principal al cargar
+            binding.webView.post {
+                loadUrlOrSearch(input)
+            }
         }
     }
 
@@ -142,7 +139,7 @@ class webFragment : Fragment() {
         } else {
             try {
                 val query = URLEncoder.encode(input, StandardCharsets.UTF_8.toString())
-                val searchUrl = "https://www.google.com/search?q=$query"
+                val searchUrl = "https://www.bing.com/search?q=$query"
                 binding.webView.loadUrl(searchUrl)
             } catch (e: Exception) {
                 e.printStackTrace()
