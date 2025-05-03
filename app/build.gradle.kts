@@ -54,4 +54,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("com.google.android.material:material:1.11.0")
+
+}
+dependencies {
+    // ... tus otras dependencias
+
+    // Agregar PhotoView directamente
+    implementation("io.github.baseflow:PhotoView:2.3.0")
 }
